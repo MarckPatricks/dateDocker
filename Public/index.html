@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Programación Distribuida de Servicios</h3>
+    <h3>4to B</h3>
+    <h3>Marck Patricks</h3>
+    <h2>La fecha de hoy es:</h2>
+</body>
+
+</html>
+
+<style type="text/css">
+    .mydate {
+        background-color: #999;
+        padding: 3px;
+        width: 110px;
+        text-align: center;
+        font-family: verdana, arial;
+        font-size: 12pt;
+    }
+
+    .mydate .year {
+        background-color: rgb(5, 106, 80);
+        padding: 2px;
+        font-size: 100%;
+        margin-bottom: 3px;
+        color: #fff;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    .mydate .day {
+        background-color: rgba(94, 243, 146, 0.892);
+        font-size: 300%;
+        padding: 5px 8px;
+        margin-bottom: 3px;
+        font-weight: bold;
+    }
+
+    .mydate .month {
+        background-color: rgb(5, 106, 80);
+        font-size: 80%;
+        padding: 2px;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    var fecha = new Date();
+    var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+    document.write('<div class="mydate">');
+    document.write('<div class="month">' + meses[fecha.getMonth()] + '</div>');
+    document.write('<div class="day">' + fecha.getDate() + '</div>');
+    document.write('<div class="year">' + fecha.getFullYear() + '</div>');
+    document.write('</div>');
+</script>
